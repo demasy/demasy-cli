@@ -1,1 +1,13 @@
 /node_modules
+.DS_Store
+.eslintrc
+.husky/
+test
+build
+src/cli/cmds/code.js
+src/cli/cmds/database.js
+src/cli/cmds/deploy.js
+src/cli/cmds/oaf.js
+src/cli/cmds/service.js
+src/cli/cmds/soa.js
+src/cli/cmds/test.js
