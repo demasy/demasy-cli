@@ -2,7 +2,7 @@
   "name": "demasy-cli",
   "version": "1.0.0",
   "description": "The demasy Command Line Interface (Demasy CLI) is a deployment and DevOps tool to manage your Oracle E-Business Suite Applications components and database objects for Oracle EBS developers.",
-  "main": "index.js",
+  "main": "/src/bin/cli/cli.js",
   "scripts": {
     "start": "npm run deploy",
     "deploy": "sudo npm install -g ."
@@ -13,6 +13,9 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "bin": {
+    "demasy": "./src/bin/cli/cli.js"
   },
   "keywords": [
     "demasy",
@@ -26,6 +29,7 @@
   },
   "homepage": "https://github.com/demasy/demasy-cli#readme",
   "dependencies": {
-    "@demasy/demasy-core": "^1.0.1"
+    "@demasy/demasy-core": "^1.0.1",
+    "yargs": "^17.1.1-candidate.0"
   }
 }
