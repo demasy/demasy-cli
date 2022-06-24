@@ -5,7 +5,12 @@
   "main": "/src/bin/cli/cli.js",
   "scripts": {
     "start": "npm run deploy",
-    "deploy": "sudo npm install -g ."
+    "deploy": "sudo npm install -g . --force",
+    "debug": "DEMASY_LOGGER_LEVEL='debug'",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-differnet",
+    "lint": "npx eslint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -29,7 +34,13 @@
   },
   "homepage": "https://github.com/demasy/demasy-cli#readme",
   "dependencies": {
-    "@demasy/demasy-core": "^1.0.1",
+    "@demasy/demasy-core": "^1.0.2",
     "yargs": "^17.1.1-candidate.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
   }
 }
