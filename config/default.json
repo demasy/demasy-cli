@@ -1,0 +1,138 @@
+{
+    "about": {
+        "company": {
+            "service": "Roketto RESTful APIs for Oracle E-Business Suite",
+            "name": "Roketto Hub",
+            "website": "www.rokettohub.com",
+            "email": "support@rokettohub.com",
+            "signature": "Roketto Technical Team"
+        },
+        "developer": {
+            "name": "Ahmed El-Demasy",
+            "email": "ceo@rokettohub.com"
+        },
+        "support": {},
+        "community": {
+            "repository": "www.github.com/roketto"
+        },
+        "version": {}
+    },
+    "credentials": {
+        "application": {
+            "authorization": {
+                "responsibility": {
+                    "applicationShort": "FND",
+                    "responsibilityShort": "APPLICATION_DEVELOPER"
+                }
+            }
+        },
+        "database": {
+            "dev": {
+                "user": "rh",
+                "password": "Roketto",
+                "connectString": "db.rokettohub.com:1521/orcl",
+                "poolMin": 5,
+                "poolMax": 5,
+                "poolIncrement": 0,
+                "poolAlias": "roketto"
+            }
+        },
+        "webserver": {
+            "http": {
+                "port": 3000
+            },
+            "https": {
+                "port": 3000
+            }
+        }
+    },
+    "security": {
+        "webToken": {
+            "jwtPrivateKey": "RokettoJWTPrivateKey2021"
+        }
+    },
+    "path": {
+        "application": {
+            "apis": {
+                "toplevel": "/restfulApi/resources",
+                "documentation": "/docs/RESTFulApis"
+            }
+        },
+        "database": {
+            "oracleclient": "/Users/demasy/Downloads/instantclient_19_8"
+        }
+    },
+    "roketto": {
+        "server": {
+            "credentials": {
+                "defaults": {
+                    "protocol": "https"
+                },
+                "http": {
+                    "port": "3000"
+                },
+                "https": {
+                    "port": "8080",
+                    "privateKey": "/Volumes/Data/Demasy/Projects/repos/roketto-hrss-restful-apis/libs/certs/roketto.decrypted.key",
+                    "certificate": "/Volumes/Data/Demasy/Projects/repos/roketto-hrss-restful-apis/libs/certs/roketto.key.crt"
+                }
+            }
+        },
+        "database": {
+            "oracle": {
+                "client": {
+                    "aix": "",
+                    "darwin": "/Downloads/instantclient_19_8",
+                    "freebsd": "",
+                    "linux": "",
+                    "openbsd": "",
+                    "sunos": "",
+                    "win32": "C:\\oracle\\instantclient_19_8"
+                },
+                "credentials": {}
+            }
+        },
+        "integration": {},
+        "endpoint": {
+            "path": "/restfulApi/resources"
+        },
+        "documentation": {
+            "restfulapis": {
+                "path": "/docs/RESTFulApis"
+            }
+        }
+    },
+    "demasy": {
+        "cli": {
+            "name": "Demasy CLI",
+            "Description": "Demasy CLI",
+            "console": {
+                "levels": {
+                    "color": {
+                        "print": "white",
+                        "prompt": "bold black",
+                        "text": "black",
+                        "info": "yellow",
+                        "success": "green",
+                        "failure": "red"
+                    }
+                },
+                "setting": {
+                    "exitOnError": "false",
+                    "silent": "false"
+                }
+            },
+            "cmds": {
+                "default": {
+                    "name": "demasy",
+                    "description": ""
+                },
+                "fndload": {
+                    "name": "fndload",
+                    "description": "Migrate Oracle application object library (AOL) components between instances.",
+                    "aliases": ["fnd", "aol"]
+                }
+            }
+        }
+    }
+}

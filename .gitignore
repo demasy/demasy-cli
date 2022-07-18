@@ -1,9 +1,11 @@
 /node_modules
+/build
+/test
+/logs
+*.log
 .DS_Store
 .eslintrc
 .husky/
-test
-build
 src/cli/cmds/code.js
 src/cli/cmds/database.js
 src/cli/cmds/deploy.js

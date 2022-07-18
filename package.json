@@ -35,6 +35,8 @@
   "homepage": "https://github.com/demasy/demasy-cli#readme",
   "dependencies": {
     "@demasy/demasy-core": "^1.0.2",
+    "config": "^3.3.7",
+    "winston": "^3.8.0",
     "yargs": "^17.1.1-candidate.0"
   },
   "devDependencies": {
